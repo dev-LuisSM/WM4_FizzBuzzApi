@@ -5,4 +5,12 @@ describe("Test for ExplorerContoller", () => {
         const ExplorersWithMission = ExplorerController.getExplorersByMission("node");
         expect(Array.isArray(ExplorersWithMission)).toBe(true);
     });
+
+    test("2) Test: Get Explorers usernames by Mission", () => {
+      const ExplorersUsernames = ExplorerController.getExplorersUsernamesByMission("node");
+      const match = ExplorersUsernames.some(el => {
+        return el.includes('ajolonauta') ? true : false
+      })
+      expect(match).toBe(true)
+    })
 });
