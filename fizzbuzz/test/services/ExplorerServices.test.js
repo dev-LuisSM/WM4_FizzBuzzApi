@@ -13,5 +13,9 @@ describe('Test for ExplorerService', () => {
     expect(ExplorerInNode).toBe(1)
   })
 
-  
+  test('3) Test: Get Username by Mission', () => {
+    const explorers = [{ mission: "node", githubUsername: "Luis" }]
+    const ExplorerUsername = ExplorerService.getExplorersUsernamesByMission(explorers, "node")
+    expect(ExplorerUsername[0]).toBe('Luis')
+  })
 })
