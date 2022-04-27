@@ -14,9 +14,15 @@ describe('Test for FizzbuzzService', () => {
   })
 
   test('3) Fizzbuss 3rd case: trick = buzz', () => {
-    const explorer = { name: "Explorer3", score: 5 }
+    const explorer = { name: "Explorer5", score: 5 }
     const service = FizzbuzzService.applyValidationInExplorer(explorer)
-    expect(service).toBe('BUZZ') // FIZZ
+    expect(service).toBe('BUZZ') // BUZZ
   })
-  
+
+  test('4) Fizzbuss 4th case: trick = fizzbuzz', () => {
+    const explorer = { name: "Explorer15", score: 15 }
+    const service = FizzbuzzService.applyValidationInExplorer(explorer)
+    expect(service).toBe('FIZZBUZZ') // FIZZBUZZ
+  })
+
 })
