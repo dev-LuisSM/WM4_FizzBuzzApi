@@ -1,7 +1,7 @@
-const ExplorerController = require("./../../lib/controllers/ExplorerContoller");
+const ExplorerController = require("./../../lib/controllers/ExplorerController");
 const FizzBuzz = require("./../../lib/services/FizzbuzzService")
 
-describe("Test for ExplorerContoller", () => {
+describe("Test for ExplorerController", () => {
     test("1) Test: Get Explorer By Mission", () => {
         const ExplorersWithMission = ExplorerController.getExplorersByMission("node");
         expect(Array.isArray(ExplorersWithMission)).toBe(true);
