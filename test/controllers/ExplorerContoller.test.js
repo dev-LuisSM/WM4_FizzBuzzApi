@@ -1,5 +1,5 @@
 const ExplorerController = require("./../../lib/controllers/ExplorerController");
-const FizzBuzz = require("./../../lib/services/FizzbuzzService")
+const FizzBuzz = require("./../../lib/services/FizzbuzzService");
 
 describe("Test for ExplorerController", () => {
     test("1) Test: Get Explorer By Mission", () => {
@@ -21,13 +21,13 @@ describe("Test for ExplorerController", () => {
     });
 
     test("4) Test: Fizzbuzz", () => {
-      const explorer = {name: "explorer", score: 15}
-      const fzExplorer = FizzBuzz.applyValidationInExplorer(explorer);
-      expect(fzExplorer).toBe("FIZZBUZZ");
+        const explorer = {name: "explorer", score: 15};
+        const fzExplorer = FizzBuzz.applyValidationInExplorer(explorer);
+        expect(fzExplorer).toBe("FIZZBUZZ");
     });
 
     test("5) Test: Fizzbuzz with number", () => {
-      const fzNumber = FizzBuzz.applyValidationInNumber(5);
-      expect(fzNumber).toBe("BUZZ");
+        const fzNumber = FizzBuzz.applyValidationInNumber(5);
+        expect(fzNumber).toBe("BUZZ");
     });
 });
