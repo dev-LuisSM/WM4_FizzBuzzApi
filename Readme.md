@@ -37,6 +37,8 @@ Fizzbuzz | ```/v1/explorers/fizzbuzz/:number``` | ```/v1/explorers/fizzbuzz/30``
 5) Documentación en Postman y la colección
 - Descarga la colección [aquí](https://www.getpostman.com/collections/e758e689b43f718d93ef)
 
+### Bot Telegram:
+Ahora puedes consultar la funcionabilidad de FizzBuzz y los alumnos por misión en un [bot de Telegram](https://t.me/FizzBuzz_LX_bot).
 ### Temas vistos:
 - Refactorización de código 💻
   - Modularización
